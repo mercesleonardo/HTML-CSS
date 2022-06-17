@@ -1,0 +1,30 @@
+h1 {
+    background-color: aquamarine;
+    height: 300px;
+    width: 300px;
+
+    /*
+    border-width: 10px;
+    border-style: solid;
+    border-color: cadetblue;
+    */
+    border: 10px solid darkcyan; /*Simplificando*/
+
+    /*Padding: Borda pra dentro(um espaço entre a margem e o conteúdo)
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    */
+    padding: 10px; /* Simplificando: Um único valor serve para todos, dois valores: o primeiro cima e baixo, segundo esquerda e direita*/
+
+    /*Margin: Borda pra fora (margin: auto para centralizar 
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+    */
+    margin: 10px auto 40px auto;
+
+    outline: 5px dashed salmon;
+}
