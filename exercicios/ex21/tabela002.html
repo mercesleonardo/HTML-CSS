@@ -18,6 +18,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th {
             border: 1px solid black;
@@ -27,8 +28,16 @@
             background-color: gray;
             color: white;
         }
+        thead > tr > th { /*Cabeçalho fixo para tabelas grandes (colocar em table > position: relative*/
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
         td.numero {
             text-align: right;
+        }
+        tbody > tr:nth-child(odd) { /*efeito zebrado*/
+            background-color: lightgray;
         }
     </style>
 </head>
@@ -49,10 +58,58 @@
         <thead>
             <tr>
                 <th scope="col">Estado</th>
-                <th scope="col" style="width: 80px">População</th>
+                <th scope="col" style="width: 100px">População</th>
             </tr>
         </thead>
         <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero"> 45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero"> 21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero"> 17 264 943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero"> 45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero"> 21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero"> 17 264 943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero"> 45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero"> 21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero"> 17 264 943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero"> 45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero"> 21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero"> 17 264 943</td>
+            </tr>
             <tr>
                 <td>São Paulo</td>
                 <td class="numero"> 45 919 049</td>
@@ -69,9 +126,24 @@
         <tfoot>
             <tr>
                 <th scope="row">Total de Habitantes</th>
-                <td class="numero"><strong>84 352 783</strong></td>
+                <td class="numero"><strong>421 763 915</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore autem molestiae velit vitae rerum aperiam. Eligendi quos, beatae, enim ducimus, consequatur quisquam expedita minus hic delectus distinctio provident aperiam perspiciatis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt nostrum autem iusto alias inventore error voluptate, delectus consequuntur. Nemo, asperiores temporibus! Pariatur ut quidem officia impedit sit doloremque, nisi rerum.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore autem molestiae velit vitae rerum aperiam. Eligendi quos, beatae, enim ducimus, consequatur quisquam expedita minus hic delectus distinctio provident aperiam perspiciatis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt nostrum autem iusto alias inventore error voluptate, delectus consequuntur. Nemo, asperiores temporibus! Pariatur ut quidem officia impedit sit doloremque, nisi rerum.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore autem molestiae velit vitae rerum aperiam. Eligendi quos, beatae, enim ducimus, consequatur quisquam expedita minus hic delectus distinctio provident aperiam perspiciatis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt nostrum autem iusto alias inventore error voluptate, delectus consequuntur. Nemo, asperiores temporibus! Pariatur ut quidem officia impedit sit doloremque, nisi rerum.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore autem molestiae velit vitae rerum aperiam. Eligendi quos, beatae, enim ducimus, consequatur quisquam expedita minus hic delectus distinctio provident aperiam perspiciatis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt nostrum autem iusto alias inventore error voluptate, delectus consequuntur. Nemo, asperiores temporibus! Pariatur ut quidem officia impedit sit doloremque, nisi rerum.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore autem molestiae velit vitae rerum aperiam. Eligendi quos, beatae, enim ducimus, consequatur quisquam expedita minus hic delectus distinctio provident aperiam perspiciatis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt nostrum autem iusto alias inventore error voluptate, delectus consequuntur. Nemo, asperiores temporibus! Pariatur ut quidem officia impedit sit doloremque, nisi rerum.
+    </p>
 </body>
 </html>
