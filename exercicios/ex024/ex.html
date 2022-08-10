@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa da Tecnologia</title>
+    <style>
+        #container {
+            width: 600px;
+            height: 900px;
+            background-color: #CCC;
+            margin: auto;
+            border-radius: 5px;
+        }
+        h1 {
+            text-align: center;
+            padding-top: 20px;
+        }
+        h4 {
+            padding-left: 20px;
+        }
+        p {
+            padding-left: 20px;
+        }
+        .submit {
+            text-align: center;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Cadastro de produto</h1>
+        <h4>Inclua as informações do produto abaixo</h4>
+
+        <form action="cadastro.php" method="get">
+            <p>
+                <label for="inome">Nome do produto:</label>
+                <input type="text" name="nome" id="inome" required placeholder="Nome do produto">
+            </p>
+            <p>
+                <label for="idesc">Descrição do produto do produto:</label>
+                <input type="text" name="desc" id="idesc" required placeholder="Descrição do produto">
+            </p>
+
+            <p>
+                <label for="ivalor">Nome do produto:</label>
+                <input type="number" name="valor" id="ivalor" required placeholder="Valor de produto" step="0.1">
+            </p>
+
+            <p>
+                <label for="iforn">Fornecedor:</label>
+                <input type="text" name="forn" id="iforn" required placeholder="Fornecedor">
+            </p>
+
+            <p class="submit" >
+                <input type="submit" value="Cadastrar">
+            </p>
+        </form>
+    </div>
+</body>
+</html>
