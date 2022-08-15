@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/* Configurações gerais */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #233EFF;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+h1 {
+    color: #FFF;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+/* Aparelho em pé (portrait) */
+
+body {
+    background-image: url(../imagens/cev-portrait.jpg);
+    background-position: center bottom;
+}
+
+/* Aparelho deitado (landscape) */
+
+body {
+    background-image: url(../imagens/cev-landscape.jpg);
+    background-position: left bottom;
+}
